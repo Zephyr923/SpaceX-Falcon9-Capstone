@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_48ef29d1567e1f27981b1d3e649c0443 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_48ef29d1567e1f27981b1d3e649c0443" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_48ef29d1567e1f27981b1d3e649c0443 = L.map(
+                "map_48ef29d1567e1f27981b1d3e649c0443",
+                {
+                    center: [30.60066953333333, -93.93071693333333],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_578a921bc4ea4a6fc361c6094f3b22da = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u00a9 Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_578a921bc4ea4a6fc361c6094f3b22da.addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+            tile_layer_578a921bc4ea4a6fc361c6094f3b22da.addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+            var marker_837e4e1d6b1a07ef5b52aeed16f837a3 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+            var icon_fa48262d26e793f83dce86aab18b3efc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00982f954a9b8f32fe0e091a932cad22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3329984e8c8c5354650fb766ccb51be1 = $(`<div id="html_3329984e8c8c5354650fb766ccb51be1" style="width: 100.0%; height: 100.0%;">KSC LC 39A</div>`)[0];
+                popup_00982f954a9b8f32fe0e091a932cad22.setContent(html_3329984e8c8c5354650fb766ccb51be1);
+            
+        
+
+        marker_837e4e1d6b1a07ef5b52aeed16f837a3.bindPopup(popup_00982f954a9b8f32fe0e091a932cad22)
+        ;
+
+        
+    
+    
+            marker_837e4e1d6b1a07ef5b52aeed16f837a3.bindTooltip(
+                `<div>
+                     Selected Launch Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_837e4e1d6b1a07ef5b52aeed16f837a3.setIcon(icon_fa48262d26e793f83dce86aab18b3efc);
+            
+    
+            tile_layer_578a921bc4ea4a6fc361c6094f3b22da.addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+                marker_837e4e1d6b1a07ef5b52aeed16f837a3.setIcon(icon_fa48262d26e793f83dce86aab18b3efc);
+            
+    
+            var marker_fa471d6583f94ec1b20655ffc2e389db = L.marker(
+                [28.622399, -80.607393],
+                {
+}
+            ).addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+        var popup_d527b13d1ff11fae50cf4bb00f5ceb6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8d6738522ea64240c9b9cb6583db43e = $(`<div id="html_e8d6738522ea64240c9b9cb6583db43e" style="width: 100.0%; height: 100.0%;">Atlantic Coastline: 1.59 km</div>`)[0];
+                popup_d527b13d1ff11fae50cf4bb00f5ceb6c.setContent(html_e8d6738522ea64240c9b9cb6583db43e);
+            
+        
+
+        marker_fa471d6583f94ec1b20655ffc2e389db.bindPopup(popup_d527b13d1ff11fae50cf4bb00f5ceb6c)
+        ;
+
+        
+    
+    
+            marker_fa471d6583f94ec1b20655ffc2e389db.bindTooltip(
+                `<div>
+                     Atlantic Coastline
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_14e49e295375ec3cb8f0601a89167609 = L.polyline(
+                [[28.608402, -80.604201], [28.622399, -80.607393]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+            poly_line_14e49e295375ec3cb8f0601a89167609.bindTooltip(
+                `<div>
+                     Atlantic Coastline: 1.59 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ede85203acc6234f1148408faa4d4edc = L.marker(
+                [28.644885, -80.703083],
+                {
+}
+            ).addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+        var popup_3bfb2ba663755cca786b751160b2e489 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e2e6ede5c417b3f20feef5c5451da31 = $(`<div id="html_4e2e6ede5c417b3f20feef5c5451da31" style="width: 100.0%; height: 100.0%;">NASA Railroad: 10.47 km</div>`)[0];
+                popup_3bfb2ba663755cca786b751160b2e489.setContent(html_4e2e6ede5c417b3f20feef5c5451da31);
+            
+        
+
+        marker_ede85203acc6234f1148408faa4d4edc.bindPopup(popup_3bfb2ba663755cca786b751160b2e489)
+        ;
+
+        
+    
+    
+            marker_ede85203acc6234f1148408faa4d4edc.bindTooltip(
+                `<div>
+                     NASA Railroad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1e2a15fa76fc70c68eb1328b7d9e33fd = L.polyline(
+                [[28.608402, -80.604201], [28.644885, -80.703083]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+            poly_line_1e2a15fa76fc70c68eb1328b7d9e33fd.bindTooltip(
+                `<div>
+                     NASA Railroad: 10.47 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_343255fafceef2a58aba15669bffc19a = L.marker(
+                [28.644888, -80.700208],
+                {
+}
+            ).addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+        var popup_e630e24d73c51b34b5b9c7b77d8bc1b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d1c9c9e30e71a9d15c352f7ce016e55 = $(`<div id="html_9d1c9c9e30e71a9d15c352f7ce016e55" style="width: 100.0%; height: 100.0%;">SR 3 / Kennedy Parkway: 10.21 km</div>`)[0];
+                popup_e630e24d73c51b34b5b9c7b77d8bc1b7.setContent(html_9d1c9c9e30e71a9d15c352f7ce016e55);
+            
+        
+
+        marker_343255fafceef2a58aba15669bffc19a.bindPopup(popup_e630e24d73c51b34b5b9c7b77d8bc1b7)
+        ;
+
+        
+    
+    
+            marker_343255fafceef2a58aba15669bffc19a.bindTooltip(
+                `<div>
+                     SR 3 / Kennedy Parkway
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_40f6806874642ce24b998839ec603cfd = L.polyline(
+                [[28.608402, -80.604201], [28.644888, -80.700208]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+            poly_line_40f6806874642ce24b998839ec603cfd.bindTooltip(
+                `<div>
+                     SR 3 / Kennedy Parkway: 10.21 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_df4e8c0d248baf4f0b6b5d8ff2c88c31 = L.marker(
+                [28.60933, -80.8076],
+                {
+}
+            ).addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+        var popup_ab4bd7ab29700d489e91d82c4c990aa7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a42bfb72cddc012781d54dea7a0643bb = $(`<div id="html_a42bfb72cddc012781d54dea7a0643bb" style="width: 100.0%; height: 100.0%;">Titusville: 19.86 km</div>`)[0];
+                popup_ab4bd7ab29700d489e91d82c4c990aa7.setContent(html_a42bfb72cddc012781d54dea7a0643bb);
+            
+        
+
+        marker_df4e8c0d248baf4f0b6b5d8ff2c88c31.bindPopup(popup_ab4bd7ab29700d489e91d82c4c990aa7)
+        ;
+
+        
+    
+    
+            marker_df4e8c0d248baf4f0b6b5d8ff2c88c31.bindTooltip(
+                `<div>
+                     Titusville
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a9ccd81c4e2ed773fbe9206fa77ced97 = L.polyline(
+                [[28.608402, -80.604201], [28.60933, -80.8076]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+            poly_line_a9ccd81c4e2ed773fbe9206fa77ced97.bindTooltip(
+                `<div>
+                     Titusville: 19.86 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_578a921bc4ea4a6fc361c6094f3b22da.addTo(map_48ef29d1567e1f27981b1d3e649c0443);
+        
+    
+                marker_837e4e1d6b1a07ef5b52aeed16f837a3.setIcon(icon_fa48262d26e793f83dce86aab18b3efc);
+            
+</script>
+</html>
