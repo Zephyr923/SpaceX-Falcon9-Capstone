@@ -161,3 +161,13 @@ SpaceX-Falcon9-Capstone/
 ├── 06_SpaceX_Machine_Learning_completed.ipynb
 ├── 07_SpaceX_Interactive_Map_Folium.ipynb
 └── 08_SpaceX_Interactive_Dashboard_Plotly_Dash.ipynb
+
+## Data Files
+
+| File | Description |
+|---|---|
+| `Spacex.csv` | SpaceX launch dataset used for SQL analysis |
+| `dataset_part_1.csv` | Initial Falcon 9 dataset collected from the SpaceX API |
+| `dataset_part_2.csv` | Wrangled dataset with landing-success classification |
+| `dataset_part_3.csv` | Processed dataset used in later analysis stages |
+| `spacex_web_scraped.csv` | Historical Falcon 9 launch records collected through web scraping |
